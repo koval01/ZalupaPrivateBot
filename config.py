@@ -1,3 +1,5 @@
-# group ids or account ids can be retrieved with @username_to_id_bot
-BOT_TOKEN="<bot-token>"
-BOT_OWNER=<bot-owner-id>
+from os import getenv
+
+
+BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_OWNER = int(getenv("BOT_OWNER"))
